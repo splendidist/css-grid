@@ -1,0 +1,42 @@
+.box-container {
+  padding: 100px 100px;
+  height: 400px;
+  width: 50vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 10px; /*makes gap between columns and rows*/
+  grid-auto-rows: 100px; /*height of div*/
+  grid-auto-flow: column; /*similar to flex direction*/
+}
+
+.box {
+  background-color: pink;
+}
+
+.cat-container {
+  height: 400px;
+  width: 50vh;
+  padding: 100px 100px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.cat {
+  background-color: yellow;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Build a grid of kittens using CSS grid. You can gather your own cat pics or use placekitten.com, it's up to you. Consider setting up some of the grid to be less uniform!*/
+
+/*the holy grail layout*/
+
+body {
+  display: grid;
+  grid-template: auto 1fr auto / auto 1fr auto; /* rows/columns */
+}
+
+/* To make a header or footer span columns in a grid, grid-column-start and grid-column-end are useful! 1 is the first column, and -1 is the last column.*/
